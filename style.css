@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container principal */
+main {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* SETUP START */
+.setup {
+    width: 100%;
+    background: linear-gradient(rgb(223, 210, 210), grey);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Setup players name */
+.players-name {
+    display: flex;
+    justify-content: space-around;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: fit-content;
+}
+
+/* Mark container */
+.mark_container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+/* Mark */
+.mark {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+    background: rgb(93, 82, 153);
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+
+}
+
+.mark, button {
+    cursor: pointer;
+
+}
+
+/* SETUP END */
+
+
+/* GAMEBOARD START */
+.gameboard {
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/* Gameboard Squares */
+.squares {
+    border: 1px solid red;
+}
+/* GAMEBOARD END */
